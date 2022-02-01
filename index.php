@@ -1,4 +1,12 @@
-<php?<!DOCTYPE html>
+<?php
+include 'db.php';
+
+$result = mysqli_query($link,"SELECT * FROM aivcontent");
+$imageQuery = mysqli_query($link,"SELECT * FROM aivimages where name = 'hero image'");
+$image = mysqli_fetch_assoc($imageQuery);
+
+?>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -93,17 +101,26 @@
               </div>
             </div>
           </nav>
-    <div class="hero">
+        <div>
+            <img src="<?php echo $image['reference'];?>" class="hero"/>
+
         <div class="container content hero-container">
             <h1>Spirit of Indonesia</h1>
             <h3>Bali & Raja Ampat | December 01 - 10, 2022</h3>
         </div>
-    </div>
+
 
     <section class="intro">
-        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ex?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, tempore dolor hic tempora est ex, sequi alias, architecto doloremque saepe in itaque voluptate ratione eligendi magni magnam nobis ea cupiditate veritatis nemo. Veniam, voluptate vel. Natus voluptas quae excepturi rem ut commodi dignissimos! Velit earum recusandae beatae tempora assumenda dolorem reiciendis, eveniet quod, ea nesciunt cumque accusamus cupiditate vel corrupti dolor fuga placeat, saepe quisquam ipsum eum ab perferendis? Animi sequi qui praesentium repudiandae esse, earum fugit eaque, inventore minus maxime incidunt alias soluta laboriosam, optio nisi ullam vel minima nam eos aliquid? Alias, numquam animi. Praesentium cum corporis ea!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quas vel, reprehenderit qui ab tenetur aut doloremque sapiente nesciunt quibusdam provident quis laudantium, id sequi adipisci quo aliquam explicabo soluta, totam reiciendis ea iure? Quisquam error dolore blanditiis sint, ad, minima adipisci possimus consequuntur, fugiat accusamus suscipit neque praesentium tenetur?</p>
+        <?php
+        $i=0;
+        while($row = mysqli_fetch_array($result)){
+        ?>
+            <p><?php echo $row["text"]; ?></p>
+
+            <?php
+            $i++;
+        }
+        ?>
     </section>
 
     <section class="tours">
