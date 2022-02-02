@@ -446,7 +446,7 @@ $image = mysqli_fetch_assoc($imageQuery);
         </div>
         <div>
             <p>
-                Copyright &copy; 2019, All Rights Reserved
+                Copyright &copy; 2022, All Rights Reserved
             </p>
         </div>
     </div>
