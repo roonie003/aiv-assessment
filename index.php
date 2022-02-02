@@ -108,13 +108,10 @@ $image = mysqli_fetch_assoc($imageQuery);
 
 
 
-    <div class="hero">
-        <img src="<?php echo $image['reference'];?>" />
+    <div class="hero" >
+
     <div class="container content hero-container">
-
-
-
-
+        <img src="<?php echo $image['reference'];?>" class="img-hero" />
             <h1>Spirit of Indonesia</h1>
             <h3>Bali & Raja Ampat | December 01 - 10, 2022</h3>
         </div>
@@ -139,7 +136,7 @@ $image = mysqli_fetch_assoc($imageQuery);
                     <h2 class="day">DAY 1 | D</h2>
                     <div class="item">
                         <div class="item-image">
-                            <img src="images/day1.jpeg" alt="" />
+                            <img src="images/day3.jpeg" alt="" />
                         </div>
                         <div class="item-text">
                             <div class="item-text-wrap">
@@ -204,7 +201,7 @@ $image = mysqli_fetch_assoc($imageQuery);
                     <h2 class="day">DAY 5 | B, L</h2>
                     <div class="item">
                         <div class="item-image">
-                            <img src="images/day5.jpeg" alt="" />
+                            <img src="images/day2.jpeg" alt="" />
                         </div>
                         <div class="item-text">
                             <div class="item-text-wrap">
@@ -221,7 +218,7 @@ $image = mysqli_fetch_assoc($imageQuery);
                     <h2 class="day">DAY 6 | B, L, D</h2>
                     <div class="item">
                         <div class="item-image">
-                            <img src="images/day6.jpeg" alt="" />
+                            <img src="images/day4.jpeg" alt="" />
                         </div>
                         <div class="item-text">
                             <div class="item-text-wrap">
@@ -245,7 +242,7 @@ $image = mysqli_fetch_assoc($imageQuery);
                 <h2 class="day">DAY 7 | D</h2>
                 <div class="item">
                     <div class="item-image">
-                        <img src="images/day1.jpeg" alt="" />
+                        <img src="images/day3.jpeg" alt="" />
                     </div>
                     <div class="item-text">
                         <div class="item-text-wrap">
@@ -337,27 +334,44 @@ $image = mysqli_fetch_assoc($imageQuery);
             <div class="column">
                 <div class="column-2">
                     <h3>Our Offers</h3>
-                    <div class="image-wrapper">
-                        <img src="/images/day1.jpeg" />
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsum.</span>
-                    </div>
 
-                    <div class="image-wrapper">
-                        <img src="/images/day2.jpeg" />
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, non.</span>
-                    </div>
+                    <div class="cont">
 
-                    <div class="image-wrapper">
-                        <img src="/images/day3.jpeg" />
-                        <spam>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, facere.</spam>
-                    </div>
+                        <div class="image-gallery h-2">
+                            <div class="gallery-item">
+                                <div class="image">
+                                    <img src="images/day3.jpeg" class="img-1">
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="image-wrapper">
-                        <img src="/images/day4.jpeg" />
-                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, animi.</span>
-                    </div>
+
+                        <div class="image-gallery h-2">
+                            <div class="gallery-item">
+                                <div class="image">
+                                    <img src="images/day4.jpeg" class="img-1">
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="image-gallery h-2">
+                            <div class="gallery-item">
+                                <div class="image">
+                                    <img src="images/day4.jpeg" class="img-1">
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="image-gallery h-2">
+                            <div class="gallery-item">
+                                <div class="image">
+                                    <img src="images/day3.jpeg" class="img-1">
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+
                     <div class="checkout">
-                        <p>Lorem ipsum dolor sit amet.</p>
                         <a href="#" class="btn">Book
                         </a>
                     </div>
@@ -371,22 +385,14 @@ $image = mysqli_fetch_assoc($imageQuery);
 
     <div class="cont">
 
-        <div class="image-gallery w-2 h-3">
+        <div class="image-gallery w-2 h-2">
             <div class="gallery-item">
                 <div class="image">
-                    <img src="images/day2.jpeg" class="img-1">
+                    <img src="images/day3.jpeg" class="img-1">
                 </div>
             </div>
         </div>
 
-
-        <div class="image-gallery h-3">
-            <div class="gallery-item">
-                <div class="image">
-                    <img src="images/day1" class="img-1">
-                </div>
-            </div>
-        </div>
 
         <div class="image-gallery h-2">
             <div class="gallery-item">
@@ -396,7 +402,7 @@ $image = mysqli_fetch_assoc($imageQuery);
             </div>
         </div>
 
-        <div class="image-gallery h-2">
+        <div class="image-gallery w-2 h-2">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/day1.jpeg" class="img-1">
@@ -414,46 +420,45 @@ $image = mysqli_fetch_assoc($imageQuery);
     </div>
 </section>
 
-<footer id="main-footer" class="py-2">
+<footer id="main-footer" class="p-2">
     <div class="container footer-container">
         <div>
             <img src="/images/aiv-header.svg" class="logo" href="#"></img>
-            <button class="btn" type="button">Block button</button>
-            <button class="btn" type="button">Block button</button>
-            <button class="btn" type="button">Block button</button>
-
+            <button class="btnlight" type="button">Block button</button>
+            <button class="btnlight" type="button">Block button</button>
+            <button class="btnlight" type="button">Block button</button>
         </div>
         <div>
             <h4>Partnerships & Media</h4>
-            <li><a href="#">Help & Support</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <ul class="list">
+            <li><a href="#">lorem ipsum</a></li>
+            <li><a href="#">lorem ipsum</a></li>
+            </ul>
+
         </div>
         <div>
             <h4>What do you enjoy?</h4>
             <ul class="list">
-                <li><a href="#">Help & Support</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem ipsum</a></li>
             </ul>
         </div>
         <div>
             <h4>About Art In Voyage</h4>
-            <li><a href="#">Help & Support</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <ul class="list">
+            <li><a href="#">lorem ipsum</a></li>
+            <li><a href="#">lorem ipsum</a></li>
+            <li><a href="#">lorem ipsum</a></li>
+            <li><a href="#">lorem ipsum</a></li>
+            </ul>
         </div>
-        <div>
-            <p>
-                Copyright &copy; 2022, All Rights Reserved
-            </p>
-        </div>
+
     </div>
 </footer>
-
-
-
 
 </body>
 
